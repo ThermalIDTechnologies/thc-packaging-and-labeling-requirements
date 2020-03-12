@@ -10,7 +10,7 @@
     {
       "src": "studio/package.json",
       "use": "@now/static-build",
-      "config":  { "distDir": "dist" }
+      "config":  { "distDir": "public" }
     }
   ],
   "routes": [
