@@ -9,7 +9,7 @@
   "scripts": {
     "start": "sanity start",
     "build": "sanity build",
-    "now-build": "npm run build",
+    "now-build": "yarn build",
     "test": "sanity check"
   },
   "keywords": [
