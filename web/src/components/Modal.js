@@ -10,6 +10,7 @@ const Modal = ({ isVisible, setVisible, usStateName }) => {
   )
 
   console.log(useStateData())
+  console.log(getStateData)
 
   const GreenCheck = () => {
     return (
