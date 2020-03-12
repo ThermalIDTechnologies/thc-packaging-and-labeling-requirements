@@ -8,8 +8,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",
-    "build": "sanity build",
-    "now-build": "yarn run build",
+    "build": "sanity build public -y",
     "test": "sanity check"
   },
   "keywords": [
