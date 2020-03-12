@@ -1,6 +1,18 @@
 {
   "version": 2,
   "name": "thc-packaging-and-labeling-requirements",
+  "builds": [
+    {
+      "src": "web/package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "public" }
+    },
+    {
+      "src": "studio/package.json",
+      "use": "@now/static-build",
+      "config":  { "distDir": "dist" }
+    }
+  ],
   "routes": [
     { "handle": "filesystem" },
     { "src": "^/studio/static/(.*)", "dest": "/studio/static/$1" },

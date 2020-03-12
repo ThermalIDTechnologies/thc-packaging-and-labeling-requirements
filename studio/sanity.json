@@ -1,7 +1,8 @@
 {
   "root": true,
   "project": {
-    "name": "THC Labeling and Packaging Requirements"
+    "name": "THC Labeling and Packaging Requirements",
+    "basePath": "/studio"
   },
   "api": {
     "projectId": "dwjuizbv",
