@@ -5,6 +5,7 @@
   "version": "1.0",
   "author": "Nathan Dalton <ndaltondev@gmail.com>",
   "dependencies": {
+    "@sanity/block-content-to-react": "^2.0.7",
     "@south-paw/react-vector-maps": "^3.0.0",
     "babel-plugin-styled-components": "^1.10.7",
     "framer-motion": "^1.9.0",

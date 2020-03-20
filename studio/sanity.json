@@ -14,7 +14,8 @@
     "@sanity/components",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/desk-tool"
+    "@sanity/desk-tool",
+    "@sanity/color-input"
   ],
   "env": {
     "development": {
@@ -28,9 +29,9 @@
       "name": "part:@sanity/base/schema",
       "path": "./schemas/schema.js"
     },
-    { 
-      "implements": "part:@sanity/dashboard/config", 
-      "path": "./dashboardConfig.js" 
+    {
+      "implements": "part:@sanity/dashboard/config",
+      "path": "./dashboardConfig.js"
     }
   ]
 }
