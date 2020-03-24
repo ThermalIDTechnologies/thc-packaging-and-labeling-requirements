@@ -1,6 +1,6 @@
 import BaseBlockContent from '@sanity/block-content-to-react'
 import React from 'react'
-import Figure from './figure'
+import Figure from './Figure'
 import sanityConfig from './../../sanity/config';
 
 const serializers = {
