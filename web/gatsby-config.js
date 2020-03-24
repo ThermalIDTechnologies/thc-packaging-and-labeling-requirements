@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `THC Solutions Cannabis Policy Page`,
@@ -31,11 +35,11 @@ module.exports = {
     {
       resolve: 'gatsby-source-sanity',
       options: {
-        projectId: 'dwjuizbv',
-        dataset: 'production',
-        // a token with read permissions is required
-        // if you have a private dataset
-        // token: process.env.MY_SANITY_TOKEN,
+        projectId: process.env.MY_SANITY_PROJECT_ID,
+        dataset: process.env.MY_SANITY_DATASET,
+        token: process.env.MY_SANITY_TOKEN,
+        overlayDrafts: `true`,
+        watchMode: `true`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

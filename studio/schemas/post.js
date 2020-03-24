@@ -6,18 +6,18 @@ export default {
     {
       title: "Title",
       name: "title",
-      type: "string",
+      type: "string"
     },
     {
       title: "Introduction",
       name: "introduction",
-      type: "string",
+      type: "string"
     },
     {
       title: "Body",
       name: "body",
       type: "array",
-      of: [{ type: "block" }, { type: "image" }]
+      of: [{ type: "block" }, { type: "figure" }]
     },
     {
       title: "Products",
@@ -33,12 +33,12 @@ export default {
     {
       title: "CTA Section",
       name: "ctaSection",
-      type: "ctaSection",
+      type: "ctaSection"
     },
     {
       title: "Quote Section",
       name: "quoteSection",
-      type: "quoteSection",
+      type: "quoteSection"
     },
     {
       title: "Sources",
@@ -48,7 +48,7 @@ export default {
         {
           title: "Source",
           name: "source",
-          type: "source",
+          type: "source"
         }
       ]
     }

@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: Raleway, sans-serif;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.9;
     min-height: 100%;
     margin: 0;
     padding: 0;
@@ -16,12 +16,10 @@ const GlobalStyle = createGlobalStyle`
 
   h1,
   h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h3 {
     ${'' /* font-family: 'Oswald', sans-serif;  */}
-    font-weight: 600;
+    ${'' /* font-weight: 600; */}
+    line-height: 1.3;
   }
 
   td {

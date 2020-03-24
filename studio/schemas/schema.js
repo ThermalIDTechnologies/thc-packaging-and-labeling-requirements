@@ -6,6 +6,7 @@ import product from "./product";
 import ctaSection from "./ctaSection";
 import quoteSection from "./quoteSection";
 import source from "./source";
+import figure from "./figure";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -19,6 +20,7 @@ export default createSchema({
     product,
     ctaSection,
     quoteSection,
-    source
+    source,
+    figure
   ])
 });
