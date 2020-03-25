@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
 
   h2 {
     /* text-align: center; */
-    font-size: 25px;
+    /* font-size: 25px; */
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 1.75px;
@@ -35,7 +35,7 @@ export const IntroContainer = styled.div(
 
     h4 {
       text-indent: 1.5rem;
-      font-size: 1rem;
+      ${"" /* font-size: 1rem; */}
       color: #fff;
       font-weight: 600;
     }
@@ -51,13 +51,20 @@ export const BodyContainer = styled.div`
     text-align: center;
   }
 
-  p:first-of-type {
+  p {
     text-indent: 1.5rem;
   }
 
   figure {
     margin-right: 0;
     margin-left: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    figure {
+      margin-right: 2rem;
+      margin-left: 2rem;
+    }
   }
 `
 
@@ -76,8 +83,21 @@ export const ProductContainer = styled.div(
     li {
       padding-left: 1rem;
     }
+
+    @media screen and (min-width: 768px) {
+      ${Wrapper} {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5rem;
+        align-items: center;
+      }
+    }
   `
 )
+
+export const ImageContainer = styled.div``
+
+export const ProductContentContainer = styled.div``
 
 export const ButtonWrapper = styled.div`
   display: flex;
@@ -105,7 +125,7 @@ export const QuoteContent = styled.div`
   min-width: 250px;
   padding: 0 0.7rem;
   color: #414042;
-  font-weight: 500; 
+  font-weight: 500;
 
   blockquote {
     margin: 0;
@@ -115,6 +135,18 @@ export const QuoteContent = styled.div`
     align-self: flex-end;
     margin-top: 0.4rem;
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 480px) {
+    blockquote, p {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media screen and (min-width: 824px) {
+    blockquote, p {
+      font-size: 1.7rem;
+    }
   }
 `
 

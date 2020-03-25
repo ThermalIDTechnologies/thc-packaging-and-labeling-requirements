@@ -17,8 +17,8 @@ const GlobalStyle = createGlobalStyle`
   h1,
   h2,
   h3 {
-    ${'' /* font-family: 'Oswald', sans-serif;  */}
-    ${'' /* font-weight: 600; */}
+    ${"" /* font-family: 'Oswald', sans-serif;  */}
+    ${"" /* font-weight: 600; */}
     line-height: 1.3;
   }
 
@@ -27,9 +27,13 @@ const GlobalStyle = createGlobalStyle`
   }
 
   @media screen and (min-width: 480px) {
-  td {
-    font-size: 100%;
-  }
+    body {
+      font-size: 120%;
+    }
+    
+    td {
+      font-size: 100%;
+    }
 }
 `
 

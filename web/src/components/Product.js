@@ -3,6 +3,8 @@ import {
   ProductContainer,
   Wrapper,
   ButtonWrapper,
+  ImageContainer,
+  ProductContentContainer,
 } from "./styles/StyledBlogPost"
 import Image from "gatsby-image"
 import BlockContent from "./block-content"
@@ -16,20 +18,24 @@ const Product = ({ product }) => {
       bgColor={`rgba(${rgba.r}, ${rgba.g}, ${rgba.b}, ${rgba.a})`}
     >
       <Wrapper>
-        <Image fluid={product.productImage.asset.fluid} alt={product.title} />
-        <h2>{product.title}</h2>
-        {product._rawProductInfo && (
-          <BlockContent blocks={product._rawProductInfo} />
-        )}
-        <ButtonWrapper>
-          <Button
-            bgColor={"#414042"}
-            fontColor={"#FFF"}
-            link={product.buttonUrl}
-          >
-            {product.buttonText}
-          </Button>
-        </ButtonWrapper>
+        <ImageContainer>
+          <Image fluid={product.productImage.asset.fluid} alt={product.title} />
+        </ImageContainer>
+        <ProductContentContainer>
+          <h2>{product.title}</h2>
+          {product._rawProductInfo && (
+            <BlockContent blocks={product._rawProductInfo} />
+          )}
+          <ButtonWrapper>
+            <Button
+              bgColor={"#414042"}
+              fontColor={"#FFF"}
+              link={product.buttonUrl}
+            >
+              {product.buttonText}
+            </Button>
+          </ButtonWrapper>
+        </ProductContentContainer>
       </Wrapper>
     </ProductContainer>
   )
