@@ -138,13 +138,15 @@ export const QuoteContent = styled.div`
   }
 
   @media screen and (min-width: 480px) {
-    blockquote, p {
+    blockquote,
+    p {
       font-size: 1.3rem;
     }
   }
 
   @media screen and (min-width: 824px) {
-    blockquote, p {
+    blockquote,
+    p {
       font-size: 1.7rem;
     }
   }
@@ -171,5 +173,8 @@ export const SourcesContainer = styled.div`
   a {
     color: #414042;
     text-decoration: none;
+    span {
+      word-break: break-all;
+    }
   }
 `

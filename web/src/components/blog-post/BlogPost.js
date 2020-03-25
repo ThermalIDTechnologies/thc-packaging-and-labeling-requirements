@@ -77,14 +77,22 @@ const BlogPost = ({ post }) => {
           </RightQuotationMark>
         </QuoteContainer>
       </Wrapper>
-      <Wrapper>
-        <SourcesContainer>
+      <SourcesContainer>
+        <Wrapper>
           <h2>SOURCES</h2>
           {sources.map(source => {
-            return <p><a href={source.sourceUrl}>{source.authorAndSource}<br />{source.sourceUrl}</a></p>
+            return (
+              <p key={source._key}>
+                <a href={source.sourceUrl}>
+                  {source.authorAndSource}
+                  <br />
+                  <span>{source.sourceUrl}</span>
+                </a>
+              </p>
+            )
           })}
-        </SourcesContainer>
-      </Wrapper>
+        </Wrapper>
+      </SourcesContainer>
     </>
   )
 }

@@ -60,6 +60,7 @@ export const query = graphql`
       sources {
         authorAndSource
         sourceUrl
+        _key
       }
     }
   }

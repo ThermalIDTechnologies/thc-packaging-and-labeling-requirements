@@ -9,3 +9,5 @@ export const wrapRootElement = ({ element }) => (
     <GlobalStyles />
   </ThemeProvider>
 )
+
+require("typeface-raleway")
